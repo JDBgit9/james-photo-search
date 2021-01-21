@@ -28,8 +28,9 @@ function Home() {
                     photos && 
                     photos.map((item, index)=>{
                         console.log(item)
+                        let src=`http://farm${item.farm}.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg`
                         return(
-                            <img src="" alt="" key={index} />
+                            <img src={src} alt={item.title} key={index} />
                         )
                     })
                 }
