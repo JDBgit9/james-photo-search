@@ -1,0 +1,10 @@
+.home .photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.photos img {
+    
+}
