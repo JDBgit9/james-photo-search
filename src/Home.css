@@ -9,12 +9,28 @@
     border: 1px solid #333333;
     border-radius: 5px;
     width: 95%;
+    padding: 15px;
+    box-sizing: border-box;
 }
 .photos img {
     width: 30%;
     object-fit: contain;
     flex-grow: 1;
     margin: 15px;
+}
+form {
+    width: 500px;
+    display: flex;
+    margin: 15px auto;
 
+}
 
+form input {
+    width: 400px;
+    padding: 5px 10px;
+
+}
+form button {
+    flex-grow: 1;
+    padding: 5px 10px;
 }
