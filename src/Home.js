@@ -1,18 +1,21 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import "./Home.css";
-import $ from "jquery";
+import $, { data } from "jquery";
 
 function Home() {
     const [input, setInput]=useState("")
+    const [photos, setPhotos]=useState()
     const flickrapi="75584617c10dcb6bdb5535174c472568"
     const flickrsecret="f36417ff7e60deac"
+    const url=`https://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&api_key=${flickrapi}&jsoncallback=?`
+    const options={tags: input, format: "json"}
     const handleSubmit=(e)=>{
         e.preventDefault()
         console.log(input)
-        $.ajax(`https://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&api_key=${flickrapi}&tags=${input}`).done(response=>{
-            console.log(response)
-        })
+        $.getJSON(url, options, displayPhotos)
     }
+    const displayPhotos=(data)=>{console.log(data)}
+    useEffect(()=>console.log(photos),[photos])
     return (
         <div className="home">
             <h1>Photo Search</h1>
