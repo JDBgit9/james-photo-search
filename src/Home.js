@@ -7,7 +7,7 @@ function Home() {
     const [photos, setPhotos]=useState()
     const flickrapi="75584617c10dcb6bdb5535174c472568"
     const flickrsecret="f36417ff7e60deac"
-    const url=`https://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&api_key=${flickrapi}&jsoncallback=?`
+    const url=`https://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&api_key=${flickrapi}&safe_search=1&per_page=20&jsoncallback=?`
     const options={tags: input, format: "json"}
     const handleSubmit=(e)=>{
         e.preventDefault()
