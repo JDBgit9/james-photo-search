@@ -14,7 +14,7 @@ function Home() {
         console.log(input)
         $.getJSON(url, options, displayPhotos)
     }
-    const displayPhotos=(data)=>{console.log(data)}
+    const displayPhotos=(data)=>{console.log(data); setPhotos(data.photos.photo)}
     useEffect(()=>console.log(photos),[photos])
     return (
         <div className="home">
@@ -23,6 +23,17 @@ function Home() {
             <input type="text" placeholder="search for photos" onChange={(e)=> setInput(e.target.value)} value={input}/>
             <button type="submit">Search</button>
             </form>
+            <div className="photos">
+                {
+                    photos && 
+                    photos.map((item, index)=>{
+                        console.log(item)
+                        return(
+                            <img src="" alt="" key={index} />
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }
