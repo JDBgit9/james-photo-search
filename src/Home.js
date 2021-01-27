@@ -17,8 +17,9 @@ function Home() {
     const displayPhotos=(data)=>{console.log(data); setPhotos(data.photos.photo)}
     useEffect(()=>console.log(photos),[photos])
     return (
+        <div className="body">
         <div className="home">
-            <h1>Photo Search</h1>
+            <h1>James' Photo Search</h1>
             <form onSubmit={handleSubmit}>
             <input type="text" placeholder="search for photos" onChange={(e)=> setInput(e.target.value)} value={input}/>
             <button type="submit">Search</button>
@@ -35,6 +36,7 @@ function Home() {
                     })
                 }
             </div>
+        </div>
         </div>
     )
 }
