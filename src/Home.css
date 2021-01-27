@@ -11,7 +11,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 70vh;
+    max-height: 90vh;
     overflow-y: scroll;
     flex-wrap: wrap;
     margin: 30px auto;
@@ -47,3 +47,12 @@ form button {
     padding: 5px 10px;
     color: cadetblue;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3F729B;
+    color: white;
+    text-align: center;
+ }
