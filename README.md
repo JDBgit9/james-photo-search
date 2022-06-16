@@ -1,7 +1,7 @@
 # James Photo Search
 
 ## Description
-This is an app designed to find photos using flickr. The Assignment is to write a one-page app that uses a phot search API via AJAJ to search for images and display them.
+This is an app designed to find photos using flickr. The Assignment is to write a one-page app that uses a photo search API via AJAX to search for images and display them.
 
 ## Github
 JDBgit9
@@ -10,7 +10,7 @@ JDBgit9
 2021
 
 # Full Name
-James Beeks
+James Justis
 
 ## Installation
 npm i
@@ -34,11 +34,11 @@ undefined
 MIT
 
 ## Email
-jdbwebdev@protonmail.com
+justiscode@outlook.com
 
 
 ---
-© 2020 James D Beeks developer readme, a Delisco, Inc. brand. All Rights Reserved.
+© 2022 James Justis developer readme, a JustisCode brand. All Rights Reserved.
 
 
 
